@@ -11,15 +11,21 @@ public class ParadigmasToolBar extends JToolBar {
 	
 	private HashMap<String, JToggleButton> botones;
 	private JButton btnLimpiar;
+	private JButton btnCrclo;
+	private JButton btnLna;
 	private ButtonGroup grupoBtn;
 	
 	public ParadigmasToolBar(){
 		setFloatable(false);
 		setOrientation(JToolBar.HORIZONTAL);
 		btnLimpiar = new JButton("LIMPIAR");
+		btnCrclo = new JButton("CIRCULO");
+		btnLna = new JButton("LINEA");
 		botones = new HashMap<>();
 		grupoBtn = new ButtonGroup();
 		this.add(btnLimpiar);
+		this.add(btnCrclo);
+		this.add(btnLna);
 	}
 	
 	public void addBtn(String key, JToggleButton btn){
